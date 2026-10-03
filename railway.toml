@@ -1,0 +1,8 @@
+[build]
+builder = "dockerfile"
+
+[deploy]
+startCommand = "node sidecar/index.js"
+restartPolicyType = "always"
+healthcheckPath = "/api/health"
+healthcheckTimeout = 30

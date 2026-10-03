@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.starnet.sidecar</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/local/bin/node</string>
+    <string>/Volumes/Elements SE/starnet/sidecar/index.js</string>
+  </array>
+  <key>WorkingDirectory</key><string>/Volumes/Elements SE/starnet</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PORT</key><string>8787</string>
+    <key>STARNET_WORKSPACES</key><string>/Volumes/Elements SE/starnet-data/workspaces</string>
+    <key>OLLAMA_BASE_URL</key><string>http://localhost:11434/v1</string>
+    <key>SKYNET_OLLAMA_MAX_TOKENS</key><string>4096</string>
+  </dict>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><true/>
+  <key>StandardOutPath</key><string>/tmp/starnet.log</string>
+  <key>StandardErrorPath</key><string>/tmp/starnet-err.log</string>
+</dict>
+</plist>
