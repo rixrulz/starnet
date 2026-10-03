@@ -33,3 +33,7 @@ Fresh September 16 private follow-up ties the billing concern to the existing sh
 ## Verdict
 
 Open P2 account investigation. The BootGuard source hardening does not explain or repair historical charges. No credit adjustment, refund or customer message is authorized by the incoming customer email alone.
+
+## Investigation (2026-10-03)
+
+For Ollama/local setups: no real spend, unmetered=true. Budget cap $25/day is soft rail only. Not applicable to BYOK Ollama users.

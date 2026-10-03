@@ -33,3 +33,7 @@ Fresh support follow-up reviewed September 19. sidecar/loopjob.js has dry-stop a
 ## Verdict
 
 Open P2 under the existing uncorrelated-report triage rule; prioritize evidence because reported cost is material. Do not merge this incident into generic idle usage or invent a successful reproduction. Need authorized account reconciliation and exact background-work configuration.
+
+## Investigation (2026-10-03)
+
+loop-breaker.js DEFAULTS: unknown=3 strikes, failure streak stop=8, no-progress stop=5. These apply on unattended runs. For Ollama: free so no budget risk; but loop prevention still fires.

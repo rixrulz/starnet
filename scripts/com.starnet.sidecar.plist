@@ -5,7 +5,7 @@
   <key>Label</key><string>com.starnet.sidecar</string>
   <key>ProgramArguments</key>
   <array>
-    <string>/usr/local/bin/node</string>
+    <string>/opt/homebrew/bin/node</string>
     <string>/Volumes/Elements SE/starnet/sidecar/index.js</string>
   </array>
   <key>WorkingDirectory</key><string>/Volumes/Elements SE/starnet</string>
@@ -13,11 +13,17 @@
   <dict>
     <key>PORT</key><string>8787</string>
     <key>STARNET_WORKSPACES</key><string>/Volumes/Elements SE/starnet-data/workspaces</string>
-    <key>OLLAMA_BASE_URL</key><string>http://localhost:11434/v1</string>
-    <key>SKYNET_OLLAMA_MAX_TOKENS</key><string>4096</string>
+    <key>OLLAMA_BASE_URL</key><string>http://127.0.0.1:11434/v1</string>
+    <key>SKYNET_OLLAMA_MAX_TOKENS</key><string>8192</string>
+    <key>SKYNET_OLLAMA_MAX_CHAT_TOKENS</key><string>2048</string>
+    <key>PATH</key><string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
   </dict>
   <key>RunAtLoad</key><true/>
-  <key>KeepAlive</key><true/>
+  <key>KeepAlive</key>
+  <dict>
+    <key>SuccessfulExit</key><false/>
+  </dict>
+  <key>ThrottleInterval</key><integer>10</integer>
   <key>StandardOutPath</key><string>/tmp/starnet.log</string>
   <key>StandardErrorPath</key><string>/tmp/starnet-err.log</string>
 </dict>

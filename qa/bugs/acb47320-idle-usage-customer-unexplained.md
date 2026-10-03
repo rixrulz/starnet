@@ -64,3 +64,7 @@ Exact before/after customer reproduction is pending; see Repro and Verdict.
 The installed Windows canary on fbaab109f completed twenty minutes idle with no usage increase, followed by three renderer recovery faults. Real task costs matched their run receipts; an isolated managed gateway probe debited exactly its recorded 0.000683 cost. This does not identify the affected account's unexplained usage. Its run ledger, armed background work and provider receipts remain required.
 
 Current receipts and remaining acceptance: [0.11.2 follow-through](../../docs/releases/0.11.2/FOLLOWTHROUGH.md). Status remains open pending the affected configuration.
+
+## Investigation (2026-10-03)
+
+Night Shift / cron schedules fire even when idle. loopjob.js redStreak gate and dry-stop are in place. For Ollama: unmetered, no cost risk.
